@@ -1,0 +1,105 @@
+body {
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #e0e5ff, #f7f7f7);
+  color: #1c1c1e;
+}
+header {
+  text-align:center;
+  padding:50px 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.7);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+header h1 { margin:0; font-size:2em; font-weight:700; }
+header p { margin-top:10px; font-weight:400; color:#555; }
+
+.container {
+  max-width:900px;
+  margin:-20px auto 20px auto;
+  padding:30px;
+  background: rgba(255,255,255,0.7);
+  border-radius:30px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.description { margin-top:15px; font-size:1.1em; line-height:1.6em; }
+.benefits { margin-top:25px; }
+.benefits h2 { font-weight:700; margin-bottom:15px; }
+.benefits ul { list-style:none; padding-left:0; }
+.benefits ul li {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  padding:12px 20px;
+  margin-bottom:12px;
+  border-radius:20px;
+  font-weight:500;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+.benefits ul li:hover { transform: translateY(-3px); }
+
+.btn-buy {
+  display:inline-block;
+  margin-top:25px;
+  padding:16px 30px;
+  background: #007aff;
+  color:white;
+  font-size:1.2em;
+  font-weight:600;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,122,255,0.3);
+  transition: all 0.3s;
+  text-decoration:none;
+  cursor:pointer;
+}
+.btn-buy:hover { background:#005ecb; box-shadow:0 10px 25px rgba(0,92,203,0.35); transform: translateY(-2px); }
+
+.ad-section {
+  margin-top:35px;
+  text-align:center;
+}
+.ad-section div {
+  width:100%;
+  max-width:320px;
+  height:100px;
+  background: rgba(200,200,200,0.5);
+  backdrop-filter: blur(8px);
+  display:inline-block;
+  line-height:100px;
+  border-radius:20px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+.ad-section div:hover { transform: scale(1.02); }
+
+#adModal {
+  display:none;
+  position:fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.9);
+  z-index:1000;
+  text-align:center;
+  font-size:1.5em;
+  line-height:100vh;
+  font-weight:600;
+  color:white;
+  backdrop-filter: blur(4px);
+  padding:20px;
+}
+
+footer {
+  text-align:center;
+  padding:25px;
+  font-size:0.9em;
+  color:#8e8e93;
+}
+
+@media(max-width:600px){
+  header h1 { font-size:1.6em; }
+  .btn-buy { font-size:1em; padding:14px 25px; }
+}
